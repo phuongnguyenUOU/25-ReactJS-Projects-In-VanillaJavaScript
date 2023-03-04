@@ -11,6 +11,7 @@ const Tour = ({ id, image, info, name, price, removeTour }) => {
           <h4 className="tour-price">${price}</h4>
         </div>
         <p>
+        {/* hide content */}
           {readMore ? info : `${info.substring(0, 200)}...`}
           <button onClick={() => setReadMore(!readMore)}>
             {readMore ? 'show less' : '  read more'}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Loading from './Loading';
-import Tours from './Tours';
+import Tour from './Tour';
 const url = 'https://course-api.com/react-tours-project'
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
   useEffect(() => {
     fetchTours()
   }, [])
+  // loading html
   if (loading) {
     return (
       <main>
@@ -34,6 +35,7 @@ function App() {
       </main>
     )
   }
+  // no tours left
   if (tours.length === 0) {
     return (
       <main>
@@ -46,9 +48,22 @@ function App() {
       </main>
     )
   }
+  // main
   return (
     <main>
-      <Tours tours={tours} removeTour={removeTour} />
+      <section>
+      <div className="title">
+        <h2>our tours</h2>
+        <div className="underline"></div>
+      </div>
+      <div>
+        {tours.map((tour) => {
+          return (
+            <Tour key={tour.id} {...tour} removeTour={removeTour} />
+            );
+        })}
+      </div>
+    </section>
     </main>
   )
 }
