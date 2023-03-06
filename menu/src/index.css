@@ -136,10 +136,12 @@ p {
 .menu {
   padding: 5rem 0;
 }
+
 .title {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -147,11 +149,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 .btn-container {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
 }
+
 .filter-btn {
   background: transparent;
   border-color: transparent;
@@ -165,10 +169,12 @@ p {
   transition: var(--transition);
   border-radius: var(--radius);
 }
+
 .filter-btn:hover {
   background: var(--clr-gold);
   color: var(--clr-white);
 }
+
 .section-center {
   width: 90vw;
   margin: 0 auto;
@@ -177,11 +183,13 @@ p {
   gap: 3rem 2rem;
   justify-items: center;
 }
+
 .menu-item {
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
 }
+
 .photo {
   object-fit: cover;
   height: 200px;
@@ -190,17 +198,21 @@ p {
   border-radius: var(--radius);
   display: block;
 }
+
 .item-info header {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
+
 .item-info h4 {
   margin-bottom: 0.5rem;
 }
+
 .price {
   color: var(--clr-gold);
 }
+
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
@@ -212,15 +224,18 @@ p {
     gap: 0 1.25rem;
     max-width: 40rem;
   }
+
   .photo {
     height: 175px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
+
   .photo {
     height: 150px;
   }
